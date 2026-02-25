@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* ===== HEADER ESPECÍFICO PARA PRIVACIDAD (igual que nosotros) ===== */
+        /* ===== HEADER ESPECÍFICO PARA PRIVACIDAD ===== */
         .privacidad-hero {
             position: relative;
             width: 100%;
-            height: 60vh;
+            height: 60vh; /* Altura en desktop */
             min-height: 400px;
             display: flex;
             flex-direction: column;
@@ -47,10 +47,13 @@
             z-index: -1;
         }
 
-        /* Ajuste adicional para móviles (mismo que en nosotros) */
+        /* Ajustes para móviles */
         @media (max-width: 600px) {
+            .privacidad-hero {
+                height: 50vh; /* Reducido a 50vh en móviles */
+            }
             .privacidad-hero::before {
-                background-position: center 20%;
+                background-position: center 20%; /* Pequeño reajuste si es necesario */
             }
         }
 
@@ -89,7 +92,7 @@
 </head>
 <body>
 
-    <!-- HEADER AHORA CON CLASE privacidad-hero -->
+    <!-- HEADER CON CLASE privacidad-hero -->
     <section class="privacidad-hero">
         <header class="top-nav">
             <div class="nav-wrapper">
@@ -111,7 +114,7 @@
 
     <main class="legal-page">
         <section class="legal-content">
-            <!-- CONTENIDO COMPLETO (tal como se proporcionó) -->
+            <!-- CONTENIDO COMPLETO (intacto) -->
             <h1 class="main-legal-title">Políticas de Privacidad Socialité</h1>
 
             <p>En Socialité estamos comprometidos con la privacidad y la seguridad de su información. Queremos que esté familiarizado con la forma en la que recopilamos, usamos y divulgamos la información, considerando también la utilización de su información personal.</p>
@@ -237,7 +240,7 @@
             <p>Nos reservamos el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
         </section>
 
-        <!-- SECCIÓN DE TWITTER SIMPLIFICADA: solo título e ícono -->
+        <!-- SECCIÓN DE TWITTER SIMPLIFICADA -->
         <div class="twitter-section">
             <h2 class="featured-title">Tweets by PTYdeModa</h2>
         </div>
